@@ -9,6 +9,27 @@ Modern Next.js frontend application for Hamro Service authentication system.
 - **Tailwind CSS** - Utility-first CSS framework
 - **Axios** - HTTP client for API requests
 
+## Project Structure
+
+```
+frontend/
+├── app/              # Next.js App Router pages
+│   ├── login/        # Login page
+│   ├── signup/       # Signup page
+│   ├── forgot-password/  # Forgot password page
+│   ├── reset-password/   # Reset password page
+│   └── home/         # Protected home page
+├── components/       # Reusable React components
+│   ├── AuthCard.tsx
+│   ├── Button.tsx
+│   ├── Input.tsx
+│   └── SocialLogin.tsx
+├── lib/              # Utility functions
+│   └── api.ts        # Axios API client
+├── middleware.ts     # Route protection
+└── public/           # Static assets
+```
+
 ## Features
 
 - User authentication (Login, Signup)
@@ -54,16 +75,24 @@ npm run build
 npm start
 ```
 
-## Project Structure
+## Features
 
-```
-frontend/
-├── app/              # Next.js App Router pages
-├── components/       # Reusable React components
-├── lib/              # Utility functions and API client
-├── public/           # Static assets
-└── middleware.ts     # Route protection
-```
+- User authentication (Login, Signup)
+- Password reset functionality (Forgot Password, Reset Password)
+- Protected routes with middleware
+- Modern UI with glassmorphism design
+- Warm peach-orange gradient theme
+- Responsive design
+- Form validation
+- Social login buttons (UI only)
+
+## Pages
+
+- `/login` - User login page
+- `/signup` - User registration page
+- `/forgot-password` - Request password reset
+- `/reset-password` - Reset password with token
+- `/home` - Protected home page (requires authentication)
 
 ## License
 
